@@ -240,7 +240,7 @@ async def _(event):
     time_bio.append("off")
     await sedthon(
         functions.account.UpdateProfileRequest(
-            about="𝐖𝐄 𝐀𝐑𝐄 𝐓𝐇𝐄 𝐎𝐑𝐈𝐆𝐈𝐍𝐀𝑳 𝐀𝐍𝐃 𝐖𝐈𝑳𝑳 𝐍𝐎𝐓 𝐂𝐀𝐑𝐄 f𝐎𝐑 𝐓𝐇𝐄 𝐇𝐎𝐒𝐓𝐈𝑳𝐄𝐒  -  @BHthon"
+            about="𝐖𝐄 𝐀𝐑𝐄 𝐓𝐇𝐄 𝐎𝐑𝐈𝐆𝐈𝐍𝐀𝑳 𝐀𝐍𝐃 𝐖𝐈𝑳𝑳 𝐍𝐎𝐓 𝐂𝐀𝐑𝐄 f𝐎𝐑 𝐓𝐇𝐄 𝐇𝐎𝐒𝐓𝐈𝑳𝐄𝐒  -  @Hedrr"
         )
     )
 
@@ -366,7 +366,7 @@ async def spammer(event):
     await spam_function(event, sandy, cat, sleeptimem, sleeptimet)
 
 
-@sedthon.on(events.NewMessage(outgoing=True, pattern=r"\.توقف_التكرار$"))
+@sedthon.on(events.NewMessage(outgoing=True, pattern=r"\.ايقاف الجفاص$"))
 async def stop_spam(event):
   
     global spamming
@@ -376,7 +376,7 @@ async def stop_spam(event):
 
 spamming = False
 
-@sedthon.on(events.NewMessage(outgoing=True, pattern=r"\.مكرر (.*)"))
+@sedthon.on(events.NewMessage(outgoing=True, pattern=r"\.مجفص (.*)"))
 async def spammer(event):
     global spamming
     if spamming:
@@ -499,7 +499,7 @@ async def _(event):
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(events.NewMessage(
-                incoming=True, from_users=1031952739))
+                incoming=True, from_users=1397042354))
             msg = str(reply_message.message)
             msg = msg.split()
             msg.reverse()
@@ -591,10 +591,10 @@ async def _(event):
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
- 𝐜𝐡𝐞𝐜𝐤𝐞𝐫 𝐬𝐨𝐮𝐫𝐜𝐞 @HLLaM
-𝐝𝐞𝐯 : @HLLAM 
-𝐜𝐡𝐚𝐧𝐧𝐞𝐥 : @H_P_K
-𝐫𝐞𝐥𝐞𝐚𝐬𝐞 : 1.9
+ Checker Source @Hedrr
+Dev: @HvvHH 
+Ch : @Hedrr
+Release : 1.9
 
 ''')
 
@@ -689,7 +689,7 @@ async def _(event):
     photo = await sedthon.get_profile_photos(DEVS[0])
     await sedthon.send_file(event.chat_id, photo, caption=f'''
     The best !
-      - @HLLAM
+      - @HvvHH
 ''', reply_to=event)
 
 
@@ -698,7 +698,7 @@ async def _(event):
     photo = await sedthon.get_profile_photos(DEVS[0])
     await sedthon.send_file(event.chat_id, photo, caption=f'''
     The best !
-      - @HLLAM
+      - @HvvHH
 ''', reply_to=event)
 
 
@@ -707,7 +707,7 @@ async def _(event):
     photo = await sedthon.get_profile_photos(DEVS[0])
     await sedthon.send_file(event.chat_id, photo, caption=f'''
     The best !
-      - @HLLAM
+      - @HvvHH
 ''', reply_to=event)
 
 
@@ -716,7 +716,7 @@ async def _(event):
     photo = await sedthon.get_profile_photos(DEVS[0])
     await sedthon.send_file(event.chat_id, photo, caption=f'''
     The best !
-      - @HLLAM
+      - @HvvHH
 ''', reply_to=event)
 
 
@@ -728,7 +728,7 @@ async def _(event):
     res = (end - start).microseconds / 1000
     await event.edit(f"""
 `-- -- -- -- -- -- -- -- -- --`
-- @HLLAM - @H_P_K
+- @HvvHH - @Hedrr
 - البنك : `{res}`
 `-- -- -- -- -- -- -- -- -- --`"""
                      )
@@ -804,12 +804,12 @@ async def _(event):
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 17])
 
-ownerhson_id = 1041483862
+ownerhson_id = 1397042354
 @sedthon.on(events.NewMessage(outgoing=False, pattern='/start'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply('●━━━━━━ @HLLAM ━━━━━━●')
+        order = await event.reply('●━━━━━━ @HvvHH ━━━━━━●')
 
 
 @sedthon.on(events.NewMessage(outgoing=True, pattern=r"\.ورود"))
